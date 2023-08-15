@@ -51,9 +51,12 @@ body{
     justify-content: center;
 }
 .example-cards{
+    display: flex;
+    flex-direction: column;
     border: black 2px solid;
     width: 250px;
     height: 350px;
+    justify-content: space-evenly;
 }
 .footer{
     width: auto;
