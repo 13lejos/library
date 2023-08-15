@@ -60,6 +60,21 @@ body{
     text-align: center;
     font-size: 1.25rem;
 }
+.popup-form{
+    display: flex;
+    flex-direction: column;
+    border: black 2px solid;
+    width: 350px;
+    height: 450px;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
 .footer{
     width: auto;
     height: 4vh;
