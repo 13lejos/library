@@ -1,7 +1,7 @@
 //create library
 let myLibrary = [];
 //constructor for books
-function book(title, author, pages, read){
+function Book(title, author, pages, read){
   this.title = title
   this.author = author
   this.pages = pages
@@ -10,14 +10,16 @@ function book(title, author, pages, read){
       return(title + ' by ' + author + ', ' + pages + ' pages, ' + 'has ' + read) 
   }
 }
-// creates a new book 
-const book1 = new book('Harry Potter', 'JK Rowling', 392, 'read' )
+// creates a new book and pushed into myLibrary Array
 
-//add book to library
-const addBook = () => {
-
+const newBook = (title, author, pages, read) => {
+const book = new Book(title, author, pages, read)
+myLibrary.push(book)
 }
+
 //remove book from library
 const removeBook = () => {
 
 }
+
+let libraryBookCount = 0;
