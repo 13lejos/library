@@ -57,6 +57,8 @@ body{
     width: 250px;
     height: 350px;
     justify-content: space-evenly;
+    text-align: center;
+    font-size: 1.25rem;
 }
 .footer{
     width: auto;
