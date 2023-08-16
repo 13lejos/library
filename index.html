@@ -26,16 +26,19 @@
                     <input type="text" placeholder="The Fellowship of the Ring">
 
                     <label for="Author">Author</label>
-                    <input type="text" placeholder="J. R. R. Tolkien">
+                    <input type="text" placeholder="J. R. R. Tolkien" required>
 
                     <label for="Pages">Pages</label>
-                    <input type="number" placeholder="423" name="" id="">
+                    <input type="number" placeholder="423" name="" id="" required>
 
                     <div class="read-container">
                         <label for="Read">Read?</label>
-                        <input type="checkbox">
+                        <input type="checkbox" class="checkbox">
                     </div>
 
+                    <div class="form-submit-container" id="form-submit-container">
+                        <button class="submit-button" id="submit-button">Submit</button>
+                    </div>
                     <div class="form-close-container" id="form-close-container">
                         <button class="close-button" id="close-button">Close</button>
                     </div>
