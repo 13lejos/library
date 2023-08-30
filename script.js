@@ -17,6 +17,7 @@ const book = new Book(title, author, pages, read)
 myLibrary.push(book)
 }
 
+
 const createCard = () => {
     const div = document.createElement('div')
     div.className = 'example-cards'
@@ -46,22 +47,12 @@ const createCard = () => {
     document.getElementById('cards-container').appendChild(div)
     div.append(title, author, pages, read, removeBook)
     
-    closeForm()
-    event.preventDefault();
 }
 //remove book from library
 const removeBook = () => {
 
 }
 
-/*
-const popUp = () =>{
-    element.addEventListener("click", function() {
-        document.getElementById("add-book").innerHTML = "Hello World";
-      });
-}
-*/
-let libraryBookCount = 0;
 
 const openForm = () => {
     document.getElementById("popup-form").style.display = "flex";
@@ -70,3 +61,12 @@ const closeForm = () => {
     document.getElementById("popup-form").style.display = "none";
     event.preventDefault();
 }
+
+const form = document.querySelector('form');
+
+form.addEventListener('submit', (e) => {    
+e.preventDefault();
+const formData = new FormData(form);
+const bookObject = Object.fromEntries(formData);
+console.log(bookObject)
+})

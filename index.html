@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="reset.css"/>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -20,24 +20,24 @@
             </div>
             <div class="cards-container" id="cards-container"></div>
             <div class="popup-form" id="popup-form">
-                <form action="" class="form">
+                <form action="" class="form" id="form">
 
                     <label for="Title">Title</label>
-                    <input type="text" placeholder="The Fellowship of the Ring">
+                    <input id="title" name="title" type="text" placeholder="The Fellowship of the Ring">
 
                     <label for="Author">Author</label>
-                    <input type="text" placeholder="J. R. R. Tolkien" required>
+                    <input id="author" name="author" type="text" placeholder="J. R. R. Tolkien" required>
 
                     <label for="Pages">Pages</label>
-                    <input type="number" placeholder="423" name="" id="" required>
+                    <input id="pages" type="number" placeholder="423" name="pages" required>
 
                     <div class="read-container">
                         <label for="Read">Read?</label>
-                        <input type="checkbox" class="checkbox">
+                        <input id="read" name="read" type="checkbox" class="checkbox">
                     </div>
 
                     <div class="form-submit-container" id="form-submit-container">
-                        <button class="submit-button" id="submit-button" onclick="createCard()">Submit</button>
+                        <button type="submit" class="submit-button" id="submit-button">Submit</button>
                     </div>
                     <div class="form-close-container" id="form-close-container">
                         <button class="close-button" id="close-button" onclick="closeForm()">Close</button>
