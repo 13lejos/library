@@ -34,16 +34,20 @@ const createCard = () => {
     pages.appendChild(pagesText)
 
     const read = document.createElement('button')
-    const readText = document.createTextNode('Read?')
+    const readText = document.createTextNode('Read')
+    read.className = 'read-card-switcher-button'
     read.appendChild(readText)
 
     const removeBook = document.createElement('button')
     const removeBookText = document.createTextNode('Remove Book')
+    removeBook.className = 'remove-book-button'
     removeBook.appendChild(removeBookText)
 
     document.getElementById('cards-container').appendChild(div)
     div.append(title, author, pages, read, removeBook)
     
+    closeForm()
+    event.preventDefault();
 }
 //remove book from library
 const removeBook = () => {
@@ -58,3 +62,11 @@ const popUp = () =>{
 }
 */
 let libraryBookCount = 0;
+
+const openForm = () => {
+    document.getElementById("popup-form").style.display = "flex";
+  }
+const closeForm = () => {
+    document.getElementById("popup-form").style.display = "none";
+    event.preventDefault();
+}

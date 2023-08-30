@@ -16,7 +16,7 @@
     <main>
         <div class="page-container" id="page-container">
             <div class="add-book-container" id="add-book-container">
-                <h2 class="add-book" id="add-book">+ Add a Book</h2>
+                <h2 class="add-book" id="add-book" onclick="openForm()">+ Add a Book</h2>
             </div>
             <div class="cards-container" id="cards-container"></div>
             <div class="popup-form" id="popup-form">
@@ -37,10 +37,10 @@
                     </div>
 
                     <div class="form-submit-container" id="form-submit-container">
-                        <button class="submit-button" id="submit-button">Submit</button>
+                        <button class="submit-button" id="submit-button" onclick="createCard()">Submit</button>
                     </div>
                     <div class="form-close-container" id="form-close-container">
-                        <button class="close-button" id="close-button">Close</button>
+                        <button class="close-button" id="close-button" onclick="closeForm()">Close</button>
                     </div>
 
                 </form>

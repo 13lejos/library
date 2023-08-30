@@ -60,8 +60,37 @@ body{
     text-align: center;
     font-size: 1.25rem;
 }
+
+.read-card-switcher-button{
+    height: 2rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    border-style: none;
+    opacity: .6;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+}
+.read-card-switcher-button:hover{
+    opacity: .9;
+    cursor: pointer;
+}
+.remove-book-button{
+    padding: .5rem;
+    height: 2rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    border-style: none;
+    background-color: rgba(255, 0, 0, 0.6);
+    font-weight: bold;
+    color: white;
+}
+.remove-book-button:hover{
+    background-color: rgba(255, 0, 0, 0.9);
+    cursor: pointer;
+}
 .popup-form{
-    display: flex;
+    display: none;
     flex-direction: column;
     border: black 2px solid;
     width: 350px;
